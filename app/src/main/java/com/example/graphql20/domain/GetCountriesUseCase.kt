@@ -1,6 +1,6 @@
 package com.example.graphql20.domain
 
-class GetCountriesUseCase(
+class GetCountriesUseCase (
     private val countryClient: CountryClient
 ) {
     suspend fun execute() : List<SimpleCountry> {
