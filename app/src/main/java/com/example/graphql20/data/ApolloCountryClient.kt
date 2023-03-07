@@ -23,7 +23,6 @@ class ApolloCountryClient(
             }
             ?: emptyList()
     }
-
     override suspend fun getCountry(code: String): DetailedCountry? {
         return apolloClient
             .query(CountryQuery(code))
